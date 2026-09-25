@@ -5,7 +5,7 @@ Follows the weighted scoring rules defined in the PRD.
 
 import math
 from datetime import datetime, timezone
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 from ai_terminal.models import Candidate, RiskLevel, ParsedBuffer, ProjectContext
 from ai_terminal.storage.repository import Repository
 
@@ -147,7 +147,7 @@ class Ranker:
         history_map: Optional[Dict[str, Dict[str, Any]]],
         max_recency_w: float,
         max_freq_w: float,
-    ) -> (float, float):
+    ) -> Tuple[float, float]:
         if not history_map or command_or_val not in history_map:
             return 0.0, 0.0
 
