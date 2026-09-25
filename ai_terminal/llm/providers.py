@@ -160,6 +160,15 @@ class OfflineHeuristicProvider(BaseLLMProvider):
     def explain(self, request: ExplainRequest) -> Optional[ExplainResponse]:
         cmd = request.command.strip()
 
+        # find explanation
+        if cmd.startswith("find"):
+            return ExplainResponse(
+                explanation="Locates files and directories matching search criteria in directory trees.",
+                effects="Searches directory tree and outputs matching path names without modifying files.",
+                risk=RiskLevel.LOW,
+                safer_variant=None,
+            )
+
         # tar explanation
         if cmd.startswith("tar"):
             parts = []
