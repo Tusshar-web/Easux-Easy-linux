@@ -87,7 +87,7 @@ The assistant is built **local-first**: local completion and history-based sugge
 
 ### 2. Install Local Package
 ```bash
-git clone https://github.com/Easux/ai-terminal.git
+git clone https://github.com/Tusshar-web/Easux-Easy-linux
 cd ai-terminal
 pip install -e .
 ```
