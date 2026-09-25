@@ -1,8 +1,8 @@
-# AI Enhanced Linux Terminal Assistant (`ai`)
+# Easux - Easy linux
 
 > **MVP specification for a safe, fast command companion for Bash and Zsh.**
 
-The **AI Enhanced Linux Terminal Assistant** augments, rather than replaces, your shell. It delivers instant local completion (< 80 ms p95), context-aware suggestions, opt-in natural-language command generation, plain-language command explanations, error-aware repair, personal history ranking, and a strict safety gate before risky execution.
+**Easeux** augments, rather than replaces, your shell. It delivers instant local completion (< 80 ms p95), context-aware suggestions, opt-in natural-language command generation, plain-language command explanations, error-aware repair, personal history ranking, and a strict safety gate before risky execution.
 
 The assistant is built **local-first**: local completion and history-based suggestions operate completely offline with zero network latency. The LLM is invoked only for explicit natural-language requests, explanations, and error repairs—and it **never** executes a generated command automatically.
 
