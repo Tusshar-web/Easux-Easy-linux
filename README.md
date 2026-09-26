@@ -1,6 +1,7 @@
 # Easux - Easy linux
 
-> **MVP specification for a safe, fast command companion for Bash and Zsh.**
+> **MVP specification for a safe, fast command companion for Bash and Zsh
+> **
 
 **Easeux** augments, rather than replaces, your shell. It delivers instant local completion (< 80 ms p95), context-aware suggestions, opt-in natural-language command generation, plain-language command explanations, error-aware repair, personal history ranking, and a strict safety gate before risky execution.
 
